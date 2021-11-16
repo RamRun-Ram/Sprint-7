@@ -17,6 +17,7 @@ class Student(
     var homeAddress: HomeAddress,
 
     @ManyToOne(cascade = [CascadeType.ALL])
+    @JoinColumn(name= "specialization_id")
     var specialization: Specialization?,
 
     @CreationTimestamp

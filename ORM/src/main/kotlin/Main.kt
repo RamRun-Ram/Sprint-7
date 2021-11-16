@@ -14,12 +14,12 @@ fun main() {
 
         val student1 = Student(
             name = "Сергей",
-            specialization = Specialization(specialization =  "инженерия"),
+            specialization = Specialization(specialization =  "ИРЭТ"),
             homeAddress = HomeAddress(street = "Мамадышский тракт")
         )
         val student2 = Student(
             name = "Александр",
-            specialization = Specialization(specialization = "бухгалтерия"),
+            specialization = Specialization(specialization = "экономический"),
             homeAddress = HomeAddress(street = "Гаврилова")
         )
 
@@ -32,7 +32,7 @@ fun main() {
         var allStudents = dao.findAll()
         println("Список всех студентов: $allStudents")
 
-        dao.delete(5L)
-        dao.delete(8L)
+//        dao.delete(5L)
+//        dao.delete(8L)
     }
 }
